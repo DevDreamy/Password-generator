@@ -6,22 +6,24 @@ const chkUppercase = document.querySelector('.chk-uppercase');
 const chkLowercase = document.querySelector('.chk-lowercase');
 const chkNum = document.querySelector('.chk-num');
 const chkSymbols = document.querySelector('.chk-symbols');
-const generatesPw = document.querySelector('.pw-generates');
+const generatePw = document.querySelector('.pw-generate');
 
 export default () => {
-  generatesPw.addEventListener('click', () => {
+  generatePw.addEventListener('click', () => {
     pwGenerated.innerHTML = generate();
   });
 };
 
 function generate() {
+  if (charQty.value > 42) {
+    return 'Valor acima do permitido.';
+  }
   const password = generatesPassword(
     charQty.value,
     chkUppercase.checked,
     chkLowercase.checked,
     chkNum.checked,
-    chkSymbols.checked
-
+    chkSymbols.checked,
   );
-    return password || 'Nada selecionado.';
+  return password || 'Nada selecionado.';
 }

@@ -13,7 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: var(--primary-color);
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -26,6 +26,7 @@ body {
 
 h1{
 	text-align: center;
+  font-size: 30px;
 }
 
 input::-webkit-outer-spin-button,
@@ -33,14 +34,10 @@ input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 }
 
-input[type="checkbox"] {
-	width: 15px;
-	height: 15px;
-}
-
 input[type="number"] {
-	width: 70px;
-	text-align: end;
+	width: 60px;
+	height: 30px;
+	text-align: center;
 	-moz-appearance:textfield;
 }
 
@@ -48,9 +45,11 @@ input:focus{
 	outline: 1px solid var(--primary-color-darker);
 }
 
-button{
+button {
 	display: block;
-	width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+	width: 35%;
 	border: none;
 	background: var(--primary-color);
 	color: #fff;
@@ -62,14 +61,58 @@ button{
 	border-radius: 10px;
 }
 
+button::after {
+  font-family: "Font Awesome 5 free";
+  content: "\f084";
+  margin-left: 10px;
+}
+
 button:hover {
 	background-color: var(--primary-color-darker);
 }
 
 .pw-generated {
-	font-size: 2em;
-	color: var(--primary-color);
+	font-size: 1.5em;
+	color: var(--primary-color-darker);
 	margin: 40px 0;
 	text-align: center;
 }
 
+.text {
+	font-size:20px;
+	font-weight: 600;
+	align-items: center;
+}
+input[type="checkbox"] {
+
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	background-color: #d5d5d5;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	vertical-align:middle;
+	text-align: center;
+}
+
+input[type="checkbox"]:after {
+	font-family: "Font Awesome 5 free";
+	font-weight: 900;
+	content: "\f00c";
+	font-size: 18px;
+	color: white;
+	display: none;
+}
+
+input[type="checkbox"]:hover {
+	background-color: #a5a5a5;
+} 
+
+input[type="checkbox"]:checked {
+	background-color: #5bcd3e;
+}
+input[type="checkbox"]:checked:after {
+	display: block;
+}

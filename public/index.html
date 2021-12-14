@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de senhas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     <section class="container">
         <h1>Gerador de Senhas</h1>
 
         <div class="pw-generated"></div>
-
-        Quantidade de caracteres: <input value="20" type="number" min="1" max="50" class="char-qty"><br>
+        <div class="text">
+        Quantidade de caracteres: <input value="20" type="number" min="1" max="42" class="char-qty"><br>
         Adicionar maiúsculas <input type="checkbox" class="chk-uppercase" checked><br>
         Adicionar minúsculas <input type="checkbox" class="chk-lowercase"><br>
         Adicionar números <input type="checkbox" class="chk-num" checked><br>
         Adicionar símbolos <input type="checkbox" class="chk-symbols"><br>
-        <button class="pw-generates">Gerar senha</button>
+    </div>
+        <button class="pw-generate">Gerar senha</button>
     </section>
 <script src="./assets/js/bundle.js"></script>    
 </body>
