@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+	--primary-color-darker: #131418;
+	--primary-color: #34465d;
+}
+
+*{
+    box-sizing: border-box;
+	outline: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--primary-color);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	border-radius: 10px;
+	max-width: 640px;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 20px;
+}
+
+h1{
+	text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+input[type="number"] {
+	width: 70px;
+	text-align: end;
+	-moz-appearance:textfield;
+}
+
+input:focus{
+	outline: 1px solid var(--primary-color-darker);
+}
+
+button{
+	display: block;
+	width: 100%;
+	border: none;
+	background: var(--primary-color);
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 30px;
+	border-radius: 10px;
+}
+
+button:hover {
+	background-color: var(--primary-color-darker);
+}
+
+.pw-generated {
+	font-size: 2em;
+	color: var(--primary-color);
+	margin: 40px 0;
+	text-align: center;
+}
+
