@@ -6,10 +6,10 @@ const chkUppercase = document.querySelector('.chk-uppercase');
 const chkLowercase = document.querySelector('.chk-lowercase');
 const chkNum = document.querySelector('.chk-num');
 const chkSymbols = document.querySelector('.chk-symbols');
-const generatePw = document.querySelector('.pw-generate');
+const pwGenerate = document.querySelector('.pw-generate');
 
 export default () => {
-  generatePw.addEventListener('click', () => {
+  pwGenerate.addEventListener('click', () => {
     pwGenerated.innerHTML = generate();
   });
 };
